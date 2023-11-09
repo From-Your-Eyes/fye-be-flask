@@ -10,6 +10,6 @@ RUN apt-get update && apt-get install -y libgl1-mesa-glx
 
 COPY . .
 
-EXPOSE 8080
+EXPOSE 5001
 
 ENTRYPOINT [ "gunicorn" , app:app]
